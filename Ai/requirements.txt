@@ -1,7 +1,9 @@
+Flask
+flask-cors
+numpy
+pillow
+requests
+joblib
+tensorflow==2.10.0 
 google-generativeai
-SpeechRecognition
-pyaudio
-pyttsx3
-flask
-
-#pip install requirement.txt
+python-dotenv

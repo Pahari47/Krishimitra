@@ -1,0 +1,21 @@
+Ai/
+├─ app.py
+├─ .env                         # NEW (put your keys here)
+├─ requirements.txt
+├─ .gitignore
+└─ app/
+   ├─ __init__.py
+   ├─ routes/
+   │  ├─ chat_routes.py
+   │  ├─ crop_routes.py
+   │  └─ predict_routes.py
+   ├─ services/
+   │  ├─ chat_service.py
+   │  ├─ crop_service.py
+   │  ├─ predict_service.py
+   │  └─ weather_service.py
+   ├─ models/
+   │  ├─ crop_recommendation.pkl
+   │  └─ pest_disease_model.h5
+   └─ data/
+      └─ class_names.json

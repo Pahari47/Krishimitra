@@ -15,5 +15,9 @@ def create_app():
             "endpoints": []
         })
     
+    from app.routes.crop_routes import crop_bp
 
+    app.register_blueprint(crop_bp)
+
+    
     return app

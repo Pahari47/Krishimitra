@@ -16,8 +16,10 @@ def create_app():
         })
     
     from app.routes.crop_routes import crop_bp
+    from app.routes.predict_routes import predict_bp
 
     app.register_blueprint(crop_bp)
+    app.register_blueprint(predict_bp)
 
     
     return app

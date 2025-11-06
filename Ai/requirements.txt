@@ -4,6 +4,7 @@ numpy
 pillow
 requests
 joblib
+tensorflow==2.10.0
 google-generativeai
 python-dotenv
 pandas

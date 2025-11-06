@@ -99,51 +99,6 @@ const Forcusting = () => {
             <Leaf className="h-8 w-8 mb-20 text-green-600" />
             <h1 className="ml-2 text-xl mb-20 font-bold text-gray-900">Dashboard</h1>
           </motion.div>
-          <motion.button
-            className="px-6 py-3 rounded-lg font-bold text-white bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg"
-            onClick={() => navigate('/climatedisaster')}
-            whileHover={{
-              scale: 1.05,
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
-              transition: { duration: 0.3 }
-            }}
-            whileTap={{
-              scale: 0.95,
-              transition: { duration: 0.2 }
-            }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <div className="flex items-center justify-center">
-              <motion.span
-                className="mr-2"
-                animate={{
-                  rotate: [0, 15, -15, 0],
-                }}
-                transition={{
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  duration: 2
-                }}
-              >
-                🌍
-              </motion.span>
-              Climate Disaster
-              <motion.span
-                className="ml-2"
-                animate={{
-                  scale: [1, 1.2, 1],
-                }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 1.5
-                }}
-              >
-                🔥
-              </motion.span>
-            </div>
-          </motion.button>
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}

@@ -1,0 +1,24 @@
+iot-server/
+├─ src/
+│  ├─ index.ts                # app bootstrap
+│  ├─ env.ts                  # env loader + validation
+│  ├─ prisma.ts               # Prisma client
+│  ├─ mqtt/
+│  │  └─ client.ts            # MQTT bridge (subscribe/publish)
+│  ├─ routes/
+│  │  ├─ health.ts
+│  │  ├─ devices.ts           # register device, list, control
+│  │  ├─ sensors.ts           # latest readings, history
+│  │  ├─ crop.ts              # proxy to Flask crop recommend
+│  │  └─ disease.ts           # proxy image upload to Flask
+│  ├─ services/
+│  │  ├─ flask.ts             # axios caller to Flask AI
+│  │  └─ sensors.ts           # persist readings
+│  └─ types.ts
+├─ prisma/
+│  └─ schema.prisma
+├─ .env
+├─ package.json
+├─ tsconfig.json
+├─ docker-compose.yml         # optional: local Postgres + Mosquitto
+└─ README.md
